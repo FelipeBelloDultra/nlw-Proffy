@@ -8,7 +8,7 @@ export async function up(kenx: Knex) {
     table.integer('from').notNullable();
     table.integer('to').notNullable();
 
-    table.integer('classes_id')
+    table.integer('class_id')
       .notNullable()
       .references('id')
       .inTable('classes')
